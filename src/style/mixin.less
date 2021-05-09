@@ -1,0 +1,23 @@
+// 提供各种混合样式
+//布局居中
+.flex-center() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//自居中
+.self-fit(@pos: absolute) {
+    position: @pos;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.self-center(@pos: absolute) {
+    position: @pos;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
